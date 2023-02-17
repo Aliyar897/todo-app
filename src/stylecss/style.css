@@ -1,0 +1,21 @@
+.loginform{
+    border: 1px gray solid;
+    height: 166px;
+    width: 200px;
+    margin-left: 10px;
+    padding: 22px;
+    border-radius: 13px;
+}
+input{
+    height: 25px;
+    width: 188px;
+    border-radius: 15px;
+}
+
+button{
+    height: 32px;
+    width: 92px;
+    float: right;
+    border-radius: 12px;
+    border: 2px gray solid;
+}

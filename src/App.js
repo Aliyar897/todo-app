@@ -1,23 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+// import Hello from './components/Hello';
+
+// import ClassEvent from "./components/ClassEvent";
+// import ConditionalComponenet from "./components/ConditionalComponenet";
+// import Counter from "./components/Counter";
+// import Form from "./components/Form";
+// import FuncationalCounter from "./components/FuncationalCounter";
+// import FunctionEvent from "./components/FunctionEvent";
+import { useState } from "react";
+import Header from "./components/Header";
+// import InlineComponent from "./components/InlineComponent";
+// import Message from "./components/Message";
+// import ModuleComponent from "./components/ModuleComponent";
+// import Products from "./components/Products";
+// import Profile from "./components/Profile";
+// import Resume from "./components/Resume";
+// import StylesheetComponent from "./components/StylesheetComponent";
+// import Todo from "./components/Todo";
+import TodoForm from "./components/TodoForm";
+
 
 function App() {
+
+  const [todo, setTodo] = useState('')
+  const [todoList, setTodoList] = useState([]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Todo></Todo> */}
+      {/* <InlineComponent> </InlineComponent> */}
+      {/* <StylesheetComponent> </StylesheetComponent> */}
+      {/* <ModuleComponent /> */}
+    <Header />
+    <TodoForm 
+      todo={todo} 
+      setTodo ={setTodo}
+      todoList ={todoList} 
+      setTodoList ={setTodoList} 
+    >        
+    </TodoForm>
     </div>
   );
 }
